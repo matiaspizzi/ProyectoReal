@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+header {
+  width: 100%;
+  background-color: #fdd9d9;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding: 1vw 10vw 1vw 10vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav button {
+  background-color: #f39f9f;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px 15px 6px 15px;
+}
+
+header nav button p {
+  color: white;
+  font-weight: 300;
+}
+
+.index__main .main__introduccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  min-height: 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fdd9d9;
+  padding: 0 12vw 0 12vw;
+}
+
+.index__main .main__introduccion .introduccion__texto {
+  padding: 7.5rem 0 0 0;
+}
+
+.index__main .main__introduccion .introduccion__texto h1 {
+  font-size: 4rem;
+}
+
+.index__main .main__introduccion .introduccion__texto p {
+  font-size: 1.25rem;
+}
+
+.index__main .main__introduccion .introduccion__img {
+  padding: 3rem 0 0 0;
+}
+
+.index__main .main__introduccion .introduccion__img img {
+  width: 35rem;
+}
+
+.index__main .main__quienesSomos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.75rem 0 1.5625rem 0;
+  min-height: 26.25rem;
+}
+
+.index__main .main__quienesSomos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index__main .main__quienesSomos ul li {
+  padding: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.index__main .main__quienesSomos ul li img {
+  width: 20rem;
+}
+
+.index__main .main__queHacemos {
+  width: auto;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ebd1ef;
+  padding: 1.25rem 12vw 0 12vw;
+}
+
+.index__main .main__queHacemos p {
+  padding-top: 0.9375rem;
+  font-size: 1.25rem;
+  width: 70vw;
+}
+
+.index__main .main__queHacemos ul {
+  position: relative;
+  top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.index__main .main__queHacemos ul li a img {
+  width: 14rem;
+}
+
+.index__main .main__nuestrosProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  padding: 15rem 12vw 0 12vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index__main .main__nuestrosProductos .nuestrosProductos__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index__main .main__nuestrosProductos .nuestrosProductos__productos ul {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  grid-column-gap: 8rem;
+  grid-row-gap: 3.5rem;
+  padding: 2rem;
+}
+
+.index__main .main__nuestrosProductos .nuestrosProductos__productos ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.index__main .main__nuestrosProductos .nuestrosProductos__productos ul li img {
+  width: 33.75rem;
+  margin-bottom: 10px;
+}
+
+.index__main .main__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d1e7ef;
+  padding: 2.5rem 0 8.75rem 0;
+}
+
+.index__main .main__contacto h2 {
+  width: 34rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.index__main .main__contacto button {
+  background-color: #000000;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.6875rem 1.75rem 0.6875rem 1.75rem;
+}
+
+.index__main .main__contacto button p {
+  color: white;
+  font-weight: 300;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.25rem 12vw 1.25rem 12vw;
+  background-color: black;
+}
+
+footer p {
+  color: white;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.875rem;
+}
+
+footer ul li p {
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  * {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  * {
+    font-size: 7px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

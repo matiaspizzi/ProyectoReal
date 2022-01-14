@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+}
+
+h2{
+    font-size: 3rem; 
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+header{
+    width: 100%;
+    background-color: #fdd9d9;
+
+    nav{
+        display: flex;
+        width: auto;
+        padding:1vw 10vw 1vw 10vw;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            width: 50vw;
+            justify-content: space-around;
+        }
+
+        button{
+            background-color: #f39f9f;
+            border: 0;
+            border-radius: 5px;
+            padding: 6px 15px 6px 15px;
+
+            p{
+                color: white;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+.index__main{
+
+    .main__introduccion{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        min-height: 40rem;
+        justify-content: space-around;
+        background-color: #fdd9d9;
+        padding: 0 12vw 0 12vw;
+    
+        .introduccion__texto{
+            padding: 7.5rem 0 0 0;
+
+            h1{
+                font-size: 4rem;
+            }
+
+            p{
+                font-size: 1.25rem;
+            }
+        }
+    
+        .introduccion__img{
+            padding: 3rem 0 0 0;
+
+            img{
+                width: 35rem;
+            }
+        }
+    }
+
+    .main__quienesSomos{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        padding: 3.75rem 0 1.5625rem 0;
+        min-height: 26.25rem;
+
+        ul{
+            display: flex;
+
+            li{
+                padding: 2vw;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                img{
+                    width: 20rem;
+                }
+            }
+        }
+    }
+
+    .main__queHacemos{
+        width: auto;
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #ebd1ef;
+        padding: 1.25rem 12vw 0 12vw;
+
+        p{
+            padding-top: 0.9375rem;
+            font-size: 1.25rem;
+            width: 70vw;
+        }
+        ul{
+            position: relative;
+            top: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li{
+                a{
+                    img{
+                        width: 14rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main__nuestrosProductos{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 15rem 12vw 0 12vw;
+        justify-content: center;
+
+        .nuestrosProductos__productos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul{
+                width: 100%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: max-content max-content;
+                grid-column-gap: 8rem;
+                grid-row-gap: 3.5rem;
+                padding: 2rem;
+
+                li{
+                    width: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    
+                    img{
+                        width: 33.75rem;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+        
+    .main__contacto{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #d1e7ef;
+        padding: 2.5rem 0 8.75rem 0;
+
+        h2{
+            width: 34rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        button{
+            background-color: #000000;
+            border: 0;
+            border-radius: 5px;
+            padding: 0.6875rem 1.75rem 0.6875rem 1.75rem;
+
+            p{
+                color: white;
+                font-weight: 300;
+            }
+        }
+        
+    }
+}
+
+footer{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding: 1.25rem 12vw 1.25rem 12vw;
+    background-color: black;
+
+    p{
+        color: white;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+        li{
+            p{
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1200px){
+    * {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    * {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    * {
+        font-size: 7px;
+    }
+}
