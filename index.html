@@ -11,21 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="scss/main.css">
 </head>
 
-<body>
-    <header>
+<body class="animate__animated animate__fadeIn">
+    <header class="headerIndex">
         <nav>
             <p>María Barbara</p>
             <ul>
-                <li><a href="index.html">Inicio</a> </li>
-                <li>¿Quiénes somos?</li>
-                <li>¿Qué hacemos?</li>
-                <li>Nuestros productos</li>
-                <li>Contacto</li>
+                <li class="scale"><a href="index.html">Inicio</a> </li>
+                <li class="scale">¿Quiénes somos?</li>
+                <li class="scale">¿Qué hacemos?</li>
+                <li class="scale">Nuestros productos</li>
+                <li class="scale">Contacto</li>
             </ul>
-            <button><p>Comprar ahora</p></button>
+            <button class="scale"><p>Comprar ahora</p></button>
         </nav>
     </header>
 
@@ -61,7 +63,7 @@
             </ul>
         </section>
 
-        <section class="main__queHacemos">
+        <section class="main__queHacemos" data-aos="flip-up">
             <h2>¿Qué hacemos?</h2>
             <p> 
                 María Barbara es un proyecto que se centra en la realización de material didáctico original,
@@ -71,32 +73,32 @@
             <ul>
                 <li>
                     <a href=" ">
-                        <img src="./multimedia/hexag/libros.png" alt="">
+                        <img src="./multimedia/hexag/libros.png" alt="" class="scale" >
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/juegos.html">
+                        <img src="./multimedia/hexag/juegos.png" alt="" class="scale" >
                     </a>
                 </li>
                 <li>
                     <a href=" ">
-                        <img src="./multimedia/hexag/juegos.png" alt="">
+                        <img src="./multimedia/hexag/recursos.png" alt="" class="scale" >
                     </a>
                 </li>
                 <li>
                     <a href=" ">
-                        <img src="./multimedia/hexag/recursos.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href=" ">
-                        <img src="./multimedia/hexag/stickers.png" alt="">
+                        <img src="./multimedia/hexag/stickers.png" alt="" class="scale" >
                     </a>
                 </li>
             </ul>
         </section>
 
         <section class="main__nuestrosProductos">
-            <h2>Nuestros Productos</h2>
-            <div class="nuestrosProductos__productos">
+            <h2 data-aos="fade-left">Nuestros Productos</h2>
+            <div class="nuestrosProductos__productos" data-aos="fade-right">
                 <ul>
-                    <li>
+                    <li >
                         <img src="./multimedia/productos/descubriEnPatagonia.jpg" alt="">
                         <h3>Descubrí en Patagonia</h3>
                         <p>Lorem ipsum</p>
@@ -122,7 +124,7 @@
 
         <section class="main__contacto">
             <h2>Si quieres contactar con nosotros escríbenos</h2>
-            <button><p>Escríbenos</p></button>
+            <button class="scale" onclick="parent.location='mailto:mail'"><p>Escríbenos</p></button>
         </section>
     </main>
 
@@ -145,5 +147,13 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 700,
+        });
+    </script>
 </body>
 </html>

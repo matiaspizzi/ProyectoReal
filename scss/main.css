@@ -7,17 +7,38 @@
   list-style: none;
 }
 
+.scale {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
 h2 {
   font-size: 3rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
+}
+
+.headerIndex {
+  background-color: #fdd9d9;
+}
+
+.headerJuegos {
+  background-color: #fdf5ab;
 }
 
 header {
   width: 100%;
-  background-color: #fdd9d9;
 }
 
 header nav {
@@ -55,6 +76,17 @@ header nav button p {
   font-weight: 300;
 }
 
+.index__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 .index__main .main__introduccion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,10 +105,6 @@ header nav button p {
 
 .index__main .main__introduccion .introduccion__texto {
   padding: 7.5rem 0 0 0;
-}
-
-.index__main .main__introduccion .introduccion__texto h1 {
-  font-size: 4rem;
 }
 
 .index__main .main__introduccion .introduccion__texto p {
@@ -230,10 +258,87 @@ header nav button p {
 
 .index__main .main__nuestrosProductos .nuestrosProductos__productos ul li img {
   width: 33.75rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  border-radius: 5px;
 }
 
-.index__main .main__contacto {
+.juegos__main {
+  width: 100%;
+  background-color: #fdf5ab;
+}
+
+.juegos__main .main__juegos {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5625rem 12vw 1.5625rem 12vw;
+}
+
+.juegos__main .main__juegos img {
+  width: 55vw;
+}
+
+.juegos__main .main__nuestrosJuegos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  padding: 1.5625rem 12vw 9.375rem 12vw;
+}
+
+.juegos__main .main__nuestrosJuegos h2 {
+  padding: 1.875rem 0 1.875rem 0;
+}
+
+.juegos__main .main__nuestrosJuegos ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  max-width: 60vw;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.juegos__main .main__nuestrosJuegos ul li {
+  padding: 0.625rem;
+  border-radius: 15px;
+  width: 100% -1.25rem;
+}
+
+.juegos__main .main__nuestrosJuegos ul li img {
+  width: 100%;
+}
+
+.juegos__main .main__nuestrosJuegos ul li h3 {
+  padding: 6px 0 20px 0;
+}
+
+.juegos__main .main__nuestrosJuegos ul li p {
+  text-align: justify;
+}
+
+.juegos__main .main__nuestrosJuegos ul li:hover {
+  background-color: white;
+}
+
+.main__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,20 +357,20 @@ header nav button p {
   padding: 2.5rem 0 8.75rem 0;
 }
 
-.index__main .main__contacto h2 {
+.main__contacto h2 {
   width: 34rem;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.index__main .main__contacto button {
+.main__contacto button {
   background-color: #000000;
   border: 0;
   border-radius: 5px;
   padding: 0.6875rem 1.75rem 0.6875rem 1.75rem;
 }
 
-.index__main .main__contacto button p {
+.main__contacto button p {
   color: white;
   font-weight: 300;
 }
