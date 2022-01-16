@@ -7,6 +7,20 @@
   list-style: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
 .scale {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -338,6 +352,72 @@ header nav button p {
   background-color: white;
 }
 
+.superstition__main {
+  width: 100%;
+  background-color: #fdf5ab;
+}
+
+.superstition__main .main__superstition {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5625rem 12vw 1.5625rem 12vw;
+}
+
+.superstition__main .main__superstition a {
+  text-decoration: underline;
+  margin: 0 0 10px 0;
+  color: #6655ff;
+}
+
+.superstition__main .main__superstition .superstition__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.75rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 2.5rem 0;
+}
+
+.superstition__main .main__superstition .superstition__conteiner .carousel {
+  width: 40vw;
+}
+
+.superstition__main .main__superstition .superstition__conteiner .superstition__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.superstition__main .main__superstition .superstition__conteiner .superstition__data button {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  background-color: #f39f9f;
+  border: none;
+  border-radius: 5px;
+}
+
+.superstition__main .main__superstition .superstition__conteiner .superstition__data button p {
+  font-size: 1.25rem;
+  color: white;
+}
+
 .main__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +501,36 @@ footer ul li p {
 @media only screen and (max-width: 660px) {
   * {
     font-size: 7px;
+  }
+  .superstition__main .main__superstition .superstition__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+  }
+  .superstition__main .main__superstition .superstition__conteiner .carousel {
+    width: 50vw;
+  }
+  .superstition__main .main__superstition .superstition__conteiner .superstition__data {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.875rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

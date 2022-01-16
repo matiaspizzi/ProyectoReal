@@ -6,6 +6,17 @@
     text-decoration: none;
     list-style: none;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+p{
+    margin: 0;
+}
 
 
 .scale{
@@ -65,8 +76,6 @@ header{
         }
     }
 }
-
-
 
 
 .index__main{
@@ -253,6 +262,56 @@ header{
     }
 }
 
+.superstition__main{
+    width: 100%;
+    background-color: #fdf5ab;    
+
+    .main__superstition{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5625rem 12vw 1.5625rem 12vw;
+        
+        a{
+            text-decoration: underline;
+            margin: 0 0 10px 0;
+            color:#6655ff;
+        }
+
+        .superstition__conteiner{
+            display: flex;
+            gap: 3.75rem;
+            justify-content: center;
+            padding: 0 0 2.5rem 0;
+
+            .carousel{
+                width: 40vw;
+            }
+
+            .superstition__data{
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+                align-items: center;
+                gap: 30px;
+
+                button{
+                    width: 100%;
+                    padding: 1rem 0 1rem 0;
+                    background-color: #f39f9f;
+                    border: none;
+                    border-radius: 5px;
+
+                    p{
+                        font-size: 1.25rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .main__contacto{
     display: flex;
     flex-direction: column;
@@ -324,4 +383,30 @@ footer{
     * {
         font-size: 7px;
     }
+
+    .superstition__main{
+        
+        .main__superstition{
+
+            .superstition__conteiner{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+        
+                .carousel{
+                    width: 50vw;
+                }
+
+                .superstition__data{
+                    width: 50vw;
+                    display: flex;
+                        flex-direction: column;
+                        
+                        align-items: center;
+                        gap: 1.875rem;
+                }
+            }
+        }
+    } 
 }
