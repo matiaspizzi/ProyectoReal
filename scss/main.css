@@ -1,10 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   text-decoration: none;
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -19,18 +23,40 @@ a {
 
 p {
   margin: 0;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 5rem;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 3rem;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 1.6rem;
+  font-weight: 800;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 1.875rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f39f9f;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+#backToTop:hover {
+  background-color: #edaaaa;
 }
 
 .scale {
@@ -115,7 +141,7 @@ header nav button {
 
 header nav button p {
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .index__main {
@@ -209,16 +235,16 @@ header nav button p {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ebd1ef;
-  padding: 1.25rem 12vw 0 12vw;
+  padding: 5rem 12vw 0 12vw;
 }
 
-.index__main .main__queHacemos p {
+.index__main .main__queHacemos div p {
   padding-top: 0.9375rem;
   font-size: 1.25rem;
   width: 70vw;
 }
 
-.index__main .main__queHacemos ul {
+.index__main .main__queHacemos div ul {
   position: relative;
   top: 1.25rem;
   display: -webkit-box;
@@ -231,7 +257,7 @@ header nav button p {
       justify-content: space-around;
 }
 
-.index__main .main__queHacemos ul li a img {
+.index__main .main__queHacemos div ul li a img {
   width: 14rem;
 }
 
@@ -244,10 +270,14 @@ header nav button p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
-  padding: 15rem 12vw 0 12vw;
+  padding: 7rem 12vw 0 12vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.index__main .main__nuestrosProductos h2 {
+  padding-top: 7rem;
 }
 
 .index__main .main__nuestrosProductos .nuestrosProductos__productos {
@@ -457,7 +487,7 @@ header nav button p {
 
 .main__contacto button p {
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 footer {
@@ -536,6 +566,12 @@ footer ul li p {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.875rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
