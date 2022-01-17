@@ -18,14 +18,6 @@ p{
     margin: 0;
 }
 
-
-.scale{
-    transition: all 0.2s;
-    &:hover{
-        transform: scale(1.15);
-    }
-}
-
 h1{
     font-size: 5rem;
 }
@@ -38,12 +30,45 @@ h3{
     font-size: 1.6rem;
 }
 
-
-.headerIndex{
-    background-color: #fdd9d9; 
+.scale{
+    transition: all 0.2s;
+    &:hover{
+        transform: scale(1.15);
+    }
 }
 
-.headerJuegos{
+.card{
+    padding: 0.625rem;
+    border-radius: 15px;
+    width:  100% -1.25rem;
+    
+    img{
+        width: 100%;
+    }
+
+    h3{
+        padding: 6px 0 20px 0;
+    }
+
+    
+
+    &:hover{
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+        background-color: white;
+    }
+}
+
+.backgroundLightGreen{
+    background-color: #8be6c5;
+}
+.backgroundGreen{
+    background-color: #b6e497;
+}
+
+.backgroundPink{
+    background-color: #fdd9d9; 
+}
+.backgroundYellow{
     background-color: #fdf5ab;
 }
 
@@ -76,7 +101,6 @@ header{
         }
     }
 }
-
 
 .index__main{
     display: flex;
@@ -203,11 +227,10 @@ header{
     }
 }
 
-.juegos__main{
-    width: 100%;
-    background-color: #fdf5ab;    
+.categoria__main{
+    width: 100%;   
 
-    .main__juegos{
+    .main__categoria{
         width: auto;
         display: flex;
         flex-direction: column;
@@ -220,7 +243,7 @@ header{
         }
     }
 
-    .main__nuestrosJuegos{
+    .main__cards{
         display: flex;
         flex-direction: column;
         width: auto;
@@ -236,28 +259,6 @@ header{
             gap: 1.25rem;
             max-width: 60vw;
             align-self: center;
-
-            li{
-                padding: 0.625rem;
-                border-radius: 15px;
-                width:  100% -1.25rem;
-                
-                img{
-                    width: 100%;
-                }
-
-                h3{
-                    padding: 6px 0 20px 0;
-                }
-
-                p{
-                    text-align: justify;
-                }
-
-                &:hover{
-                    background-color: white;
-                }
-            }
         }
     }
 }
@@ -281,7 +282,7 @@ header{
         .superstition__conteiner{
             display: flex;
             gap: 3.75rem;
-            justify-content: center;
+            justify-content: space-between;
             padding: 0 0 2.5rem 0;
 
             .carousel{

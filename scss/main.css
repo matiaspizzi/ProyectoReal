@@ -21,16 +21,6 @@ p {
   margin: 0;
 }
 
-.scale {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.scale:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
 h1 {
   font-size: 5rem;
 }
@@ -43,11 +33,49 @@ h3 {
   font-size: 1.6rem;
 }
 
-.headerIndex {
+.scale {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.card {
+  padding: 0.625rem;
+  border-radius: 15px;
+  width: 100% -1.25rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  padding: 6px 0 20px 0;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+  background-color: white;
+}
+
+.backgroundLightGreen {
+  background-color: #8be6c5;
+}
+
+.backgroundGreen {
+  background-color: #b6e497;
+}
+
+.backgroundPink {
   background-color: #fdd9d9;
 }
 
-.headerJuegos {
+.backgroundYellow {
   background-color: #fdf5ab;
 }
 
@@ -276,12 +304,11 @@ header nav button p {
   border-radius: 5px;
 }
 
-.juegos__main {
+.categoria__main {
   width: 100%;
-  background-color: #fdf5ab;
 }
 
-.juegos__main .main__juegos {
+.categoria__main .main__categoria {
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,11 +326,11 @@ header nav button p {
   padding: 1.5625rem 12vw 1.5625rem 12vw;
 }
 
-.juegos__main .main__juegos img {
+.categoria__main .main__categoria img {
   width: 55vw;
 }
 
-.juegos__main .main__nuestrosJuegos {
+.categoria__main .main__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,11 +342,11 @@ header nav button p {
   padding: 1.5625rem 12vw 9.375rem 12vw;
 }
 
-.juegos__main .main__nuestrosJuegos h2 {
+.categoria__main .main__cards h2 {
   padding: 1.875rem 0 1.875rem 0;
 }
 
-.juegos__main .main__nuestrosJuegos ul {
+.categoria__main .main__cards ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -328,28 +355,6 @@ header nav button p {
   max-width: 60vw;
   -ms-grid-row-align: center;
       align-self: center;
-}
-
-.juegos__main .main__nuestrosJuegos ul li {
-  padding: 0.625rem;
-  border-radius: 15px;
-  width: 100% -1.25rem;
-}
-
-.juegos__main .main__nuestrosJuegos ul li img {
-  width: 100%;
-}
-
-.juegos__main .main__nuestrosJuegos ul li h3 {
-  padding: 6px 0 20px 0;
-}
-
-.juegos__main .main__nuestrosJuegos ul li p {
-  text-align: justify;
-}
-
-.juegos__main .main__nuestrosJuegos ul li:hover {
-  background-color: white;
 }
 
 .superstition__main {
@@ -380,9 +385,9 @@ header nav button p {
   display: -ms-flexbox;
   display: flex;
   gap: 3.75rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 0 2.5rem 0;
 }
 
