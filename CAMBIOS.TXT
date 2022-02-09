@@ -15,7 +15,6 @@ LISTO** - Seccion "Nuestros libros?", quieren que se vea toda la tapa del libro.
          
 
 LISTO** - Seccion "Stickers", borre descripciones.
-            FALTA*-- Quieren que se vean todas las planchas de stickers completas en vertical.
 
 
 LISTO** - Seccion "Nuestros recursos", cambiar caratulas y texto.
