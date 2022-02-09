@@ -41,24 +41,6 @@ h3 {
   font-weight: 800;
 }
 
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 5rem;
-  right: 1.875rem;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #f39f9f;
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-#backToTop:hover {
-  background-color: #edaaaa;
-}
-
 .scale {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -80,7 +62,7 @@ h3 {
 }
 
 .card h3 {
-  padding: 6px 0 20px 0;
+  padding: 16px 0 20px 0;
 }
 
 .card:hover {
@@ -107,6 +89,10 @@ h3 {
 
 header {
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header nav {
@@ -226,7 +212,7 @@ header nav button p {
 
 .index__main .main__queHacemos {
   width: auto;
-  height: 19rem;
+  height: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +256,7 @@ header nav button p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
-  padding: 7rem 12vw 0 12vw;
+  padding: 11rem 12vw 0 12vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
