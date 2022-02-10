@@ -23,12 +23,9 @@ LISTO** - Seccion "Nuestros recursos", cambiar caratulas y texto.
 LISTO** - Descripcion de los juegos/libros/etc
 
 
-
-
-
 LISTO* - Fixed navbar (quieren que se siga viendo al scrollear)
 
-
+FALTA* - Page por producto
 
 FALTA*-  Acomodar/resizear los textos
 

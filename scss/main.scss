@@ -371,17 +371,6 @@ footer {
   p {
     color: white;
   }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1.875rem;
-    li {
-      p {
-        color: white;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 1200px) {
