@@ -20,25 +20,45 @@
 </head>
 
 <body class="animate__animated animate__fadeIn">
-    <header class="backgroundYellow">
+    <header class="backgroundPink">
         <nav>
-            <a href="../../index.html"><p>María Barbara</p></a>
-            <ul>
-                <li class="scale"><a href="../../index.html">Inicio</a></li>
-                <li class="scale"><a href="../../index.html#quienesSomos">¿Quiénes somos?</a></li>
-                <li class="scale"><a href="../../index.html#queHacemos">¿Qué hacemos?</a></li>
-                <li class="scale"><a href="../../index.html#nuestrosProductos">Nuestros productos</a></li>
-                <li class="scale"><a href="#contacto">Contacto</a></li>
+            <a href="../../index.html" class="mariaBarbara">
+                <p>María Barbara</p>
+            </a>
+            <ul class="navList">
+                <li><a href="../../index.html"><button>
+                            <p>Inicio</p>
+                        </button></a></li>
+                <li><a href="../../index.html#quienesSomos"><button onclick="visible()">
+                            <p>¿Quiénes somos?</p>
+                        </button></a></li>
+                <li><a href="../../index.html#queHacemos"><button onclick="visible()">
+                            <p>¿Qué hacemos?</p>
+                        </button></a></li>
+                <li><a href="../../index.html#nuestrosProductos"><button onclick="visible()">
+                            <p>Nuestros productos</p>
+                        </button></a></li>
+                <li><a href="#contacto"><button onclick="visible()">
+                            <p>Contacto</p>
+                        </button></a></li>
             </ul>
-            <a href="https://www.instagram.com/mariabarbara_edu/" target="_blank"><button class="scale"><p>Comprar ahora</p></button></a>
+            <a href="https://www.instagram.com/mariabarbara_edu/" target="_blank"><button class="scale comprarAhora">
+                    <p>Comprar ahora</p>
+                </button></a>
+            <button class="navToggle" onclick="visible()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
+                </svg>
+            </button>
         </nav>
     </header>
 
-    <main class="superstition__main">
-        <section class="main__superstition">
+    <main class="juegos__main">
+        <section class="main__juego">
             <h1 data-aos="fade-up">Descubrí en Patagonia</h1>
             <a href="../juegos.html"><p>Juegos</p></a>
-            <div class="superstition__conteiner" data-aos="fade-up">
+            <div class="juego__conteiner" data-aos="fade-up">
                 <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -61,7 +81,7 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="superstition__data">
+                <div class="juego__data">
                     <p>Juego de cartas con distintos animales de la Patagonia argentina. El pack incluye un mazo de cartas de animales patagónicos  junto a un cuaderno de instrucciones con 3 juegos posibles</p>
                     <button>
                         <p>Obtené más información</p>
@@ -87,6 +107,11 @@
             offset: 200,
             duration: 700,
         });
+
+        const navList = document.querySelector(".navList")
+        function visible() {
+            navList.classList.toggle("navVisible")
+        }
     </script>
 </body>
 </html>

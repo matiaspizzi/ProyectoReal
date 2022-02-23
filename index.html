@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>María Barbara</title>
-    <meta name="description" content="Material didáctico original, creativo y lúdico bilingüe para niñes y adolescentes">
-    <meta name="keywords"  content="Material didáctico, bilingüe">
+    <meta name="description"
+        content="Material didáctico original, creativo y lúdico bilingüe para niñes y adolescentes">
+    <meta name="keywords" content="Material didáctico, bilingüe">
     <link rel="shortcut icon" href="multimedia/iconMB.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="scss/main.css">
 </head>
 
 <body class="animate__animated animate__fadeIn">
     <header class="backgroundPink">
         <nav>
-            <a href="index.html"><p>María Barbara</p></a>
-            <ul>
-                <li class="scale"><a href="index.html">Inicio</a></li>
-                <li class="scale"><a href="index.html#quienesSomos">¿Quiénes somos?</a></li>
-                <li class="scale"><a href="index.html#queHacemos">¿Qué hacemos?</a></li>
-                <li class="scale"><a href="index.html#nuestrosProductos">Nuestros productos</a></li>
-                <li class="scale"><a href="#contacto">Contacto</a></li>
+            <a href="index.html" class="mariaBarbara">
+                <p>María Barbara</p>
+            </a>
+            <ul class="navList">
+                <li><a href="index.html"><button>
+                            <p>Inicio</p>
+                        </button></a></li>
+                <li><a href="index.html#quienesSomos"><button onclick="visible()">
+                            <p>¿Quiénes somos?</p>
+                        </button></a></li>
+                <li><a href="index.html#queHacemos"><button onclick="visible()">
+                            <p>¿Qué hacemos?</p>
+                        </button></a></li>
+                <li><a href="index.html#nuestrosProductos"><button onclick="visible()">
+                            <p>Nuestros productos</p>
+                        </button></a></li>
+                <li><a href="#contacto"><button onclick="visible()">
+                            <p>Contacto</p>
+                        </button></a></li>
             </ul>
-            <a href="https://www.instagram.com/mariabarbara_edu/" target="_blank"><button class="scale"><p>Comprar ahora</p></button></a>
+            <a href="https://www.instagram.com/mariabarbara_edu/" target="_blank"><button class="scale comprarAhora">
+                    <p>Comprar ahora</p>
+                </button></a>
+            <button class="navToggle" onclick="visible()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
+                </svg>
+            </button>
         </nav>
     </header>
 
@@ -37,8 +59,8 @@
             <div class="introduccion__texto">
                 <h1>Aprendizaje <br> lúdico</h1>
                 <p>Material didáctico originao, creativo y lúdico bilingüe para niñes y adolescentes
-                    <br> con una perspectiva comunicativa, multicultural, de género,
-                    <br> de respeto al ambiente, crítico y reflexivo.</p>
+                    con una perspectiva comunicativa, multicultural, de género,
+                    de respeto al ambiente, crítico y reflexivo.</p>
             </div>
             <div class="introduccion__img">
                 <img src="./multimedia/logo.png" alt="">
@@ -51,85 +73,87 @@
                 <li>
                     <img src="./multimedia/quienesSomos/dosEmprendedoras1.png" alt="">
                     <h3>MARIA</h3>
-                    <p>Hola, soy Meri! Soy docente de inglés de primaria y secundaria 
-                        <br> y licenciada en realización y producción audiovisual
-                        <br> lo que me permite darle un aspecto creativo a cada clase y proyecto que planifico.
-                        <br> Me encanta estar en el aula pero también dedicar tiempo
-                        <br> y esfuerzo a crear material para mis alumnes.</p>              
+                    <p>Hola, soy Meri! Soy docente de inglés de primaria y secundaria
+                        y licenciada en realización y producción audiovisual
+                        lo que me permite darle un aspecto creativo a cada clase y proyecto que planifico.
+                        Me encanta estar en el aula pero también dedicar tiempo
+                        y esfuerzo a crear material para mis alumnes.</p>
                 </li>
                 <li>
                     <img src="./multimedia/quienesSomos/dosMaestras1.png" alt="">
                     <h3>BARBARA</h3>
                     <p>Hola, soy Barbi! Soy profesora y Licenciada en Ciencias Políticas.
-                        <br> Creo fervientemente que como educadores somos quienes podemos
-                        <br> dar herramientas a las personas que harán de este mundo un mundo mejor.
-                        <br> Es esta creencia lo que me guía en cada espacio y actividad
-                        <br>en la que tengo la posibilidad de participar y crear.</p>
+                        Creo fervientemente que como educadores somos quienes podemos
+                        dar herramientas a las personas que harán de este mundo un mundo mejor.
+                        Es esta creencia lo que me guía en cada espacio y actividad
+                        en la que tengo la posibilidad de participar y crear.</p>
                 </li>
                 <li>
                     <img src="./multimedia/quienesSomos/conIniciativa1.png" alt="">
                     <h3>MARIA BARBARA</h3>
                     <p>Maria Barbara es un proyecto que comenzó cuando éramos pareja pedagógica
-                        <br> y armábamos proyectos interdisciplinares juntas. 
-                        <br> Ambas nos dimos cuenta cuánto teníamos en común
-                        <br>en nuestras perspectivas sobre educación. 
-                        <br>Luego combinamos nuestras fortalezas para crear contenido 
-                        <br>en el que pudiéramos poner nuestras ideas y experiencias
-                        <br>en la creación de herramientas didácticas y lúdicas.</p>
+                        y armábamos proyectos interdisciplinares juntas.
+                        Ambas nos dimos cuenta cuánto teníamos en común
+                        en nuestras perspectivas sobre educación.
+                        Luego combinamos nuestras fortalezas para crear contenido
+                        en el que pudiéramos poner nuestras ideas y experiencias
+                        en la creación de herramientas didácticas y lúdicas.</p>
                 </li>
             </ul>
         </section>
 
-        <section class="main__queHacemos"  id="queHacemos">
-            <div data-aos="fade-up"> <!-- DIV exclusivo para data-aos, sino rompe el href -->
+        <section class="main__queHacemos" id="queHacemos">
+            <div data-aos="fade-up">
+                <!-- DIV exclusivo para data-aos, sino rompe el href -->
                 <h2>¿Qué hacemos?</h2>
                 <ul data-aos="fade-up">
                     <li>
                         <a href="./pages/libros.html">
-                            <img src="./multimedia/hexag/libros.png" alt="" class="scale" >
+                            <img src="./multimedia/hexag/libros.png" alt="" class="scale">
                         </a>
                     </li>
                     <li>
                         <a href="./pages/juegos.html">
-                            <img src="./multimedia/hexag/juegos.png" alt="" class="scale" >
+                            <img src="./multimedia/hexag/juegos.png" alt="" class="scale">
                         </a>
                     </li>
                     <li>
                         <a href="./pages/recursos.html">
-                            <img src="./multimedia/hexag/recursos.png" alt="" class="scale" >
+                            <img src="./multimedia/hexag/recursos.png" alt="" class="scale">
                         </a>
                     </li>
                     <li>
                         <a href="./pages/stickers.html">
-                            <img src="./multimedia/hexag/stickers.png" alt="" class="scale" >
+                            <img src="./multimedia/hexag/stickers.png" alt="" class="scale">
                         </a>
                     </li>
                 </ul>
             </div>
-            
+
         </section>
 
-        <section class="main__nuestrosProductos" >
+        <section class="main__nuestrosProductos">
             <h2 data-aos="fade-up" id="nuestrosProductos">Nuestros Productos</h2>
             <div class="nuestrosProductos__productos" data-aos="fade-up">
                 <ul>
-                    <li >
+                    <li>
                         <img src="./multimedia/productos/descubriEnPatagonia.jpg" alt="">
                         <h3>Descubrí en Patagonia</h3>
-                        <p>Juego de cartas con distintos animales de la Patagonia argentina.</p>                  
+                        <p>Juego de cartas con distintos animales de la Patagonia argentina.</p>
                     </li>
                     <li>
                         <img src="./multimedia/productos/theMagicalWizardlyWorld.jpg" alt="">
                         <h3>The Magical Wizardly World</h3>
-                        <p>Encontrá un universo de magia y diversión con estos juegos <br>ambientados en el maravilloso universo de Harry Potter.</p>
+                        <p>Encontrá un universo de magia y diversión con estos juegos <br>ambientados en el maravilloso
+                            universo de Harry Potter.</p>
                     </li>
                     <li>
                         <img src="./multimedia/productos/discoveringMalalaYousafzai.jpg" alt="">
-                        <h3>Discovering Malala Yousafzai</h3>                        
+                        <h3>Discovering Malala Yousafzai</h3>
                     </li>
                     <li>
                         <img src="./multimedia/productos/stickersColoreables.jpg" alt="">
-                        <h3>Stickers coloreables</h3>                        
+                        <h3>Stickers coloreables</h3>
                     </li>
                 </ul>
             </div>
@@ -137,7 +161,9 @@
 
         <section class="main__contacto" id="contacto">
             <h2>Para más info, escribinos</h2>
-            <button class="scale" onclick="parent.location='mailto:mail'"><p>Contactate</p></button>
+            <button class="scale" onclick="parent.location='mailto:mail'">
+                <p>Contactate</p>
+            </button>
         </section>
     </main>
 
@@ -152,6 +178,12 @@
             offset: 200,
             duration: 700,
         });
+
+        const navList = document.querySelector(".navList")
+        function visible() {
+            navList.classList.toggle("navVisible")
+        }
     </script>
 </body>
+
 </html>

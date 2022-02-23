@@ -51,26 +51,6 @@ h3 {
           transform: scale(1.15);
 }
 
-.card {
-  padding: 0.625rem;
-  border-radius: 15px;
-  width: 100% -1.25rem;
-}
-
-.card img {
-  width: 100%;
-}
-
-.card h3 {
-  padding: 16px 0 20px 0;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
-          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
-  background-color: white;
-}
-
 .backgroundLightGreen {
   background-color: #8be6c5;
 }
@@ -93,9 +73,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 header nav {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,16 +102,33 @@ header nav ul {
       justify-content: space-around;
 }
 
-header nav button {
+header nav ul li button {
+  background-color: transparent;
+  border: none;
+}
+
+header nav .comprarAhora {
   background-color: #f39f9f;
   border: 0;
   border-radius: 5px;
   padding: 6px 15px 6px 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
-header nav button p {
+header nav .comprarAhora p {
   color: white;
   font-weight: 400;
+}
+
+header nav .navToggle {
+  background-color: transparent;
+  border: none;
+  display: none;
 }
 
 .index__main {
@@ -373,12 +374,32 @@ header nav button p {
       align-self: center;
 }
 
-.superstition__main {
+.categoria__main .main__cards ul .card {
+  padding: 0.625rem;
+  border-radius: 15px;
+  width: 100% -1.25rem;
+}
+
+.categoria__main .main__cards ul .card img {
+  width: 100%;
+}
+
+.categoria__main .main__cards ul .card h3 {
+  padding: 16px 0 20px 0;
+}
+
+.categoria__main .main__cards ul .card:hover {
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+  background-color: white;
+}
+
+.juegos__main {
   width: 100%;
   background-color: #fdf5ab;
 }
 
-.superstition__main .main__superstition {
+.juegos__main .main__juego {
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,13 +411,13 @@ header nav button p {
   padding: 1.5625rem 12vw 1.5625rem 12vw;
 }
 
-.superstition__main .main__superstition a {
+.juegos__main .main__juego a {
   text-decoration: underline;
   margin: 0 0 10px 0;
   color: #6655ff;
 }
 
-.superstition__main .main__superstition .superstition__conteiner {
+.juegos__main .main__juego .juego__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,11 +428,11 @@ header nav button p {
   padding: 0 0 2.5rem 0;
 }
 
-.superstition__main .main__superstition .superstition__conteiner .carousel {
+.juegos__main .main__juego .juego__conteiner .carousel {
   width: 40vw;
 }
 
-.superstition__main .main__superstition .superstition__conteiner .superstition__data {
+.juegos__main .main__juego .juego__conteiner .juego__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +447,7 @@ header nav button p {
   gap: 30px;
 }
 
-.superstition__main .main__superstition .superstition__conteiner .superstition__data button {
+.juegos__main .main__juego .juego__conteiner .juego__data button {
   width: 100%;
   padding: 1rem 0 1rem 0;
   background-color: #f39f9f;
@@ -434,7 +455,7 @@ header nav button p {
   border-radius: 5px;
 }
 
-.superstition__main .main__superstition .superstition__conteiner .superstition__data button p {
+.juegos__main .main__juego .juego__conteiner .juego__data button p {
   font-size: 1.25rem;
   color: white;
 }
@@ -496,6 +517,10 @@ footer p {
   * {
     font-size: 12px;
   }
+  .categoria__main .main__cards ul {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -506,9 +531,43 @@ footer p {
 
 @media only screen and (max-width: 660px) {
   * {
-    font-size: 7px;
+    font-size: 9px;
   }
-  .superstition__main .main__superstition .superstition__conteiner {
+  header nav {
+    padding: 2vw 10vw 1vw 10vw;
+  }
+  header nav .navToggle {
+    display: block;
+  }
+  header nav .mariaBarbara {
+    display: none;
+  }
+  header nav .navList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 40px;
+    left: 0px;
+    background-color: white;
+    padding: 20px 0 10px 0;
+    left: 100%;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+  header nav .navList p {
+    font-size: 12px;
+  }
+  header nav .navVisible {
+    left: 0;
+  }
+  .juegos__main .main__juego .juego__conteiner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -521,10 +580,10 @@ footer p {
             justify-content: center;
     width: auto;
   }
-  .superstition__main .main__superstition .superstition__conteiner .carousel {
+  .juegos__main .main__juego .juego__conteiner .carousel {
     width: 50vw;
   }
-  .superstition__main .main__superstition .superstition__conteiner .superstition__data {
+  .juegos__main .main__juego .juego__conteiner .juego__data {
     width: 50vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,11 +597,102 @@ footer p {
             align-items: center;
     gap: 1.875rem;
   }
+  .index__main .main__introduccion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index__main .main__introduccion .introduccion__texto {
+    padding: 0 0 7.5rem 0;
+  }
+  .index__main .main__introduccion .introduccion__img img {
+    width: 30rem;
+  }
+  .index__main .main__quienesSomos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3.75rem 0 1.5625rem 0;
+    min-height: 26.25rem;
+  }
+  .index__main .main__quienesSomos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index__main .main__quienesSomos ul li {
+    padding: 2vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 50%;
+  }
+  .index__main .main__quienesSomos ul li img {
+    width: 20rem;
+  }
+  .index__main .main__nuestrosProductos .nuestrosProductos__productos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
+  .index__main .main__nuestrosProductos .nuestrosProductos__productos ul li {
+    width: 35rem;
+  }
+  .index__main .main__nuestrosProductos .nuestrosProductos__productos ul li img {
+    width: 100%;
+  }
+  .categoria__main .main__categoria img {
+    width: 80vw;
+  }
+  .categoria__main .main__cards ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .categoria__main .main__cards ul .card {
+    padding: 0.625rem;
+    border-radius: 15px;
+    width: 100% -1.25rem;
+  }
+  .categoria__main .main__cards ul .card img {
+    width: 100%;
+    border-radius: 7px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  * {
-    font-size: 5px;
+  .index__main .main__queHacemos div ul li a img {
+    width: 10rem;
+  }
+  .index__main .main__nuestrosProductos .nuestrosProductos__productos ul li {
+    width: 30rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

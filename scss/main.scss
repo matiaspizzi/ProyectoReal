@@ -48,24 +48,7 @@ h3 {
   }
 }
 
-.card {
-  padding: 0.625rem;
-  border-radius: 15px;
-  width: 100% -1.25rem;
 
-  img {
-    width: 100%;
-  }
-
-  h3 {
-    padding: 16px 0 20px 0;
-  }
-
-  &:hover {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
-    background-color: white;
-  }
-}
 
 .backgroundLightGreen {
   background-color: #8be6c5;
@@ -85,31 +68,47 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+  height: max-content;
 
   nav {
+    height: 100%;
     display: flex;
     width: auto;
     padding: 1vw 10vw 1vw 10vw;
     justify-content: space-between;
     align-items: center;
-    
 
     ul {
       display: flex;
       width: 50vw;
       justify-content: space-around;
+
+      li{
+        button{
+          background-color: transparent;
+          border: none;
+        }
+      }
     }
 
-    button {
+    .comprarAhora {
       background-color: #f39f9f;
       border: 0;
       border-radius: 5px;
       padding: 6px 15px 6px 15px;
+      width: max-content;
+      height: max-content;
 
       p {
         color: white;
         font-weight: 400;
       }
+    }
+
+    .navToggle{
+      background-color: transparent;
+      border: none;
+      display: none;
     }
   }
 }
@@ -279,15 +278,34 @@ header {
       gap: 1.25rem;
       max-width: 60vw;
       align-self: center;
+
+      .card {
+        padding: 0.625rem;
+        border-radius: 15px;
+        width: 100% -1.25rem;
+      
+        img {
+          width: 100%;
+        }
+      
+        h3 {
+          padding: 16px 0 20px 0;
+        }
+      
+        &:hover {
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+          background-color: white;
+        }
+      }
     }
   }
 }
 
-.superstition__main {
+.juegos__main {
   width: 100%;
   background-color: #fdf5ab;
 
-  .main__superstition {
+  .main__juego {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -299,7 +317,7 @@ header {
       color: #6655ff;
     }
 
-    .superstition__conteiner {
+    .juego__conteiner {
       display: flex;
       gap: 3.75rem;
       justify-content: space-between;
@@ -309,7 +327,7 @@ header {
         width: 40vw;
       }
 
-      .superstition__data {
+      .juego__data {
         display: flex;
         flex-direction: column;
         width: 30vw;
@@ -377,6 +395,14 @@ footer {
   * {
     font-size: 12px;
   }
+
+  .categoria__main {
+    .main__cards {
+      ul {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -387,12 +413,50 @@ footer {
 
 @media only screen and (max-width: 660px) {
   * {
-    font-size: 7px;
+    font-size: 9px;
   }
 
-  .superstition__main {
-    .main__superstition {
-      .superstition__conteiner {
+  header {
+
+    nav {
+      padding: 2vw 10vw 1vw 10vw;
+      
+
+      .navToggle{
+        display: block;
+      }
+      
+      .mariaBarbara{
+        display: none;
+      }
+
+      .navList {
+        
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        top: 40px;
+        left: 0px;
+        background-color: white;
+        padding: 20px 0 10px 0;
+        left: 100%;
+        transition: left 0.3s;
+        p{
+          font-size: 12px;
+        }
+      }
+
+      .navVisible{
+        left: 0;
+      }
+    }
+  }
+
+  .juegos__main {
+    .main__juego {
+      .juego__conteiner {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -402,13 +466,102 @@ footer {
           width: 50vw;
         }
 
-        .superstition__data {
+        .juego__data {
           width: 50vw;
           display: flex;
           flex-direction: column;
-
           align-items: center;
           gap: 1.875rem;
+        }
+      }
+    }
+  }
+
+  .index__main{
+    .main__introduccion {
+      flex-direction: column-reverse;
+      align-items: center;     
+       
+      .introduccion__texto {
+        padding: 0 0 7.5rem 0;
+      }
+
+      .introduccion__img {
+        img {
+          width: 30rem;
+        }
+      }
+    }
+
+    .main__quienesSomos {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      align-items: center;
+      padding: 3.75rem 0 1.5625rem 0;
+      min-height: 26.25rem;
+  
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        li {
+          padding: 2vw;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 50%;
+  
+          img {
+            width: 20rem;
+          }
+        }
+      }
+    }
+
+    .main__nuestrosProductos {
+      .nuestrosProductos__productos {
+  
+        ul {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+  
+          li {
+            width: 35rem;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .categoria__main {
+    .main__categoria{
+      
+      img{
+        width: 80vw;
+      }
+    }
+  
+    .main__cards {
+
+      ul {
+        grid-template-columns: 1fr;
+
+        .card {
+          padding: 0.625rem;
+          border-radius: 15px;
+          width: 100% -1.25rem;
+        
+          img {
+            width: 100%;
+            border-radius: 7px;
+          }
         }
       }
     }
@@ -416,7 +569,30 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-    * {
-      font-size: 5px;
+  
+  .index__main {  
+    .main__queHacemos {
+      div {
+        ul {
+          li {
+            a {
+              img {
+                width: 10rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .main__nuestrosProductos {
+      .nuestrosProductos__productos {
+        ul {
+          li {
+            width: 30rem;
+          }
+        }
+      }
     }
   }
+}
