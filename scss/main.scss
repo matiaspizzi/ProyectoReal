@@ -48,7 +48,9 @@ h3 {
   }
 }
 
-
+button{
+  cursor: pointer;
+}
 
 .backgroundLightGreen {
   background-color: #8be6c5;
@@ -281,11 +283,12 @@ header {
 
       .card {
         padding: 0.625rem;
-        border-radius: 15px;
+        border-radius: 7px;
         width: 100% -1.25rem;
       
         img {
           width: 100%;
+          border-radius: 7px;
         }
       
         h3 {
@@ -542,7 +545,7 @@ footer {
 
   .categoria__main {
     .main__categoria{
-      
+
       img{
         width: 80vw;
       }
