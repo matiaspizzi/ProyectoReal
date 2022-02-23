@@ -55,6 +55,21 @@ button {
   cursor: pointer;
 }
 
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto svg {
+  height: 20px;
+  width: 20px;
+}
+
 .backgroundLightGreen {
   background-color: #8be6c5;
 }
