@@ -45,6 +45,7 @@ h3 {
   transition: all 0.2s;
   &:hover {
     transform: scale(1.15);
+    z-index: 800;
   }
 }
 
@@ -295,6 +296,7 @@ header {
         padding: 0.625rem;
         border-radius: 7px;
         width: 100% -1.25rem;
+        height: max-content;
       
         img {
           width: 100%;
@@ -358,6 +360,56 @@ header {
             font-size: 1.25rem;
             color: white;
           }
+        }
+      }
+    }
+  }
+}
+
+.recursos__main {
+  width: 100%;
+
+  .main__recurso {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5625rem 12vw 1.5625rem 12vw;
+
+    a {
+      text-decoration: underline;
+      margin: 0 0 10px 0;
+      color: #6655ff;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.25rem;
+      max-width: 60vw;
+      align-self: center;
+
+      .card {
+        padding: 0.625rem;
+        border-radius: 7px;
+        width: 100% -1.25rem;
+        height: max-content;
+        justify-content: space-around;
+        background-color: transparent;
+        border: transparent;
+      
+        img {
+          width: 100%;
+          border-radius: 7px;
+        }
+      
+        h3 {
+          padding: 16px 0 10px 0;
+          margin: 0;
+        }
+      
+        &:hover {
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.26);
+          background-color: white;
         }
       }
     }
